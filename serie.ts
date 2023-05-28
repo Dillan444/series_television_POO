@@ -1,8 +1,8 @@
-import { Actor } from "./actor"
-import { Categoria } from "./categoria"
-import { Episodio } from "./episodio"
-import { Persona } from "./persona"
-import { Plataforma } from "./plataforma"
+import { Actor } from "./actor.js"
+import { Categoria } from "./categoria.js"
+import { Episodio } from "./episodio.js"
+import { Persona } from "./persona.js"
+import { Plataforma } from "./plataforma.js"
 
 type elenco = {
   actores: string[],
@@ -35,7 +35,7 @@ export class Serie {
     const details: object = {
       "imagen": this.imagen,
       "nombre": this.nombre,
-      "episodios": this.episodios.length,
+      "episodios": this.episodios,
       "categorias": this.get_category(),
       "actores": this.elenco.actores,
       "directores": this.elenco.directores

@@ -1,5 +1,5 @@
-import { Plan } from "./plan"
-import { Serie } from "./serie"
+import { Plan } from "./plan.js"
+import { Serie } from "./serie.js"
 
 export class Plataforma {
   nombre: string

@@ -1,10 +1,8 @@
-import { Serie } from "./serie"
-
 export abstract class Persona {
   nombre: string
   fotografia: string
   descripcion: string
-  series: Serie[] = []
+  series: string[] = []
 
   constructor(nombre: string, fotografia: string, descripcion: string) {
     this.nombre = nombre
@@ -15,8 +13,8 @@ export abstract class Persona {
   // 5. Mostrar el detalle de un director y de un actor
   abstract get_details(): any
 
-  add_serie(serie: Serie){
-    this.series.push(serie)
+  add_serie(nombreSerie: string){
+    this.series.push(nombreSerie)
   }
 
   get_name(){
