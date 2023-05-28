@@ -25,6 +25,10 @@ export class Plataforma {
     this.series.push(serie)
   }
 
+  add_plan(plan: Plan){
+    this.planes.push(plan)
+  }
+
   get_details(){
     return this
   }
