@@ -11,4 +11,15 @@ export abstract class Persona {
     this.fotografia = fotografia
     this.descripcion = descripcion
   }
+
+  // 5. Mostrar el detalle de un director y de un actor
+  abstract get_details(): any
+
+  add_serie(serie: Serie){
+    this.series.push(serie)
+  }
+
+  get_name(){
+    return this.nombre
+  }
 }

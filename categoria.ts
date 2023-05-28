@@ -1,7 +1,11 @@
 export class Categoria {
-  categorias: any = {}
+  categoria: string
 
   constructor(categoria: string){
-    this.categorias[categoria] = true
+    this.categoria = categoria
+  }
+
+  get_name(){
+    return this.categoria
   }
 }
