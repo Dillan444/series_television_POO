@@ -1,5 +1,8 @@
-import { Persona } from "./persona.js";
-export class Director extends Persona {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Director = void 0;
+const persona_js_1 = require("./persona.js");
+class Director extends persona_js_1.Persona {
     constructor(nombre, fotografia, descripcion) {
         super(nombre, fotografia, descripcion);
     }
@@ -7,3 +10,4 @@ export class Director extends Persona {
         return this;
     }
 }
+exports.Director = Director;

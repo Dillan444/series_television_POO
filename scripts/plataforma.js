@@ -1,4 +1,7 @@
-export class Plataforma {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Plataforma = void 0;
+class Plataforma {
     constructor(nombre, dominio) {
         this.planes = [];
         this.series = [];
@@ -23,3 +26,4 @@ export class Plataforma {
         return this.nombre;
     }
 }
+exports.Plataforma = Plataforma;
