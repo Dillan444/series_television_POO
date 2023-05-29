@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Serie = void 0;
-class Serie {
+export class Serie {
     constructor(imagen, nombre) {
         this.episodios = [];
         this.elenco = {
@@ -51,4 +48,3 @@ class Serie {
         this.episodios.push(episodio);
     }
 }
-exports.Serie = Serie;

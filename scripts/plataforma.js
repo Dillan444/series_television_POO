@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Plataforma = void 0;
-class Plataforma {
+export class Plataforma {
     constructor(nombre, dominio) {
         this.planes = [];
         this.series = [];
@@ -26,4 +23,3 @@ class Plataforma {
         return this.nombre;
     }
 }
-exports.Plataforma = Plataforma;
