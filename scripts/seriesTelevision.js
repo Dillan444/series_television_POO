@@ -1,11 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.SeriesDeTelevision = void 0;
-const actor_js_1 = require("./actor.js");
-const categoria_js_1 = require("./categoria.js");
-const director_js_1 = require("./director.js");
-const serie_js_1 = require("./serie.js");
-class SeriesDeTelevision {
+import { Actor } from "./actor.js";
+import { Categoria } from "./categoria.js";
+import { Director } from "./director.js";
+import { Serie } from "./serie.js";
+export class SeriesDeTelevision {
     constructor() {
         this.series = [];
         this.plataformas = [];
@@ -76,24 +73,24 @@ class SeriesDeTelevision {
     }
     // 8. Crear una nueva serie
     create_serie(imagen, nombre) {
-        const newSerie = new serie_js_1.Serie(imagen, nombre);
+        const newSerie = new Serie(imagen, nombre);
         this.series.push(newSerie);
         return newSerie;
     }
     // 9. Crear una nueva categoría
     create_category(nombre) {
-        const newCategory = new categoria_js_1.Categoria(nombre);
+        const newCategory = new Categoria(nombre);
         this.categorias.push(newCategory);
     }
     // 10. Crear un nuevo actor
     create_actor(nombre, foto, descripcion) {
-        const newActor = new actor_js_1.Actor(nombre, foto, descripcion);
+        const newActor = new Actor(nombre, foto, descripcion);
         this.actores.push(newActor);
         return newActor;
     }
     // 11. Crear un nuevo director
     create_director(nombre, foto, descripcion) {
-        const newDirector = new director_js_1.Director(nombre, foto, descripcion);
+        const newDirector = new Director(nombre, foto, descripcion);
         this.directores.push(newDirector);
         return newDirector;
     }
@@ -173,4 +170,3 @@ class SeriesDeTelevision {
         return serie[0];
     }
 }
-exports.SeriesDeTelevision = SeriesDeTelevision;
