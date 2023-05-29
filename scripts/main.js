@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const dataBase_js_1 = require("./dataBase.js");
+dataBase_js_1.dbSeries.show_seriesList();
+dataBase_js_1.dbSeries.show_serieDetails("Stranger Things");
+dataBase_js_1.dbSeries.show_categories();
+dataBase_js_1.dbSeries.show_actorsAndDirectorsListOfSerie("Stranger Things");
+dataBase_js_1.dbSeries.show_actorDetails("Millie Bobby");
+dataBase_js_1.dbSeries.show_directorDetails("Shawn Levy");
+dataBase_js_1.dbSeries.show_plataformas();
+dataBase_js_1.dbSeries.show_PlataformaDetails("Netflix");
+dataBase_js_1.dbSeries.show_PlataformaDetails("Amazon Prime Video");
+// dbSeries.show_serieDetails("Kitmetsu no Yaiba");
